@@ -27,9 +27,9 @@ namespace LongestAbecedarianWord
 
         public static bool IsAbecedarian(string word)
         {
-            for (int i = 1; i < word.Length; i++)
+            for (int letter = 1; letter < word.Length; letter++)
             {
-                if ((word[i]) < (word[i - 1]))
+                if ((word[letter]) < (word[letter - 1]))
                 {
                     return false;
                 }
